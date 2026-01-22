@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KUNBI KARES</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,500;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="image/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="whatwedo.html">WHAT WE DO</a></li>
+                    <li><a href="about.html">ABOUT US</a></li>
+                    <li><a href="donate.html">DONATE</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+    
+        <h1>About Us</h1>
+    </section>
+
+
+
+    <!--About Us Content-->
+
+    <section class="about-us">
+
+        <div class="row">
+            <div class="about-col">
+                <h1>Our Story</h1>
+                <p>"Kunbi Kares Foundation is a dedicated non-governmental organization committed to transforming the landscape of community wellbeing through a holistic and compassionate approach to healthcare and social welfare. At the heart of our mission is a profound dedication to maternal health and support for pregnant women, ensuring that expectant mothers in underserved communities receive the vital prenatal care, nutritional guidance, and medical advocacy necessary for safe pregnancies and healthy deliveries.
+                We serve as a leading voice in support and advocacy for children living with sickle cell disease. By providing medical assistance, emotional support networks, and genotype education, we empower these young 'warriors' and their families to manage the condition with dignity and resilience.
+                Complementing this is our robust child health and welfare program, which provides a comprehensive safety net for the next generation through essential immunizations, routine health screenings, and the promotion of child rights to foster a nurturing environment where every child can thrive.
+                </p>
+                <a href="donate.html" class="hero-btn red-btn">DONATE</a>
+            </div>
+            <div class="about-col">
+                <img src="image/Empowering.png">
+            </div>
+        </div>
+
+    </section>
+    
+    <!--Footer-->
+    <section class="footer">
+        <div class="icons">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="https://www.instagram.com/kunbi_kares_foundation?igsh=MWwxa2ZuMXowdWp3dw%3D%3D&utm_source=qr" target="_blank">
+            <i class="fa fa-instagram"></i>
+            </a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+        </div>
+        <p>Feel free to Donate <i class="fa fa-heart-o"></i></p>
+    </section>
+
+    <!--JavaScript for toggle menu-->
+    <script>
+
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+
+    </script>
+    
+</body>
+</html>

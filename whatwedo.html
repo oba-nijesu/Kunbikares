@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KUNBI KARES</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,500;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="image/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="whatwedo.html">WHAT WE DO</a></li>
+                    <li><a href="about.html">ABOUT US</a></li>
+                    <li><a href="donate.html">DONATE</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+    
+        <h1>Our Programs & Services</h1>
+    </section>
+
+    <!--WHAT WE DO-->
+
+    <section class="whatwedo">
+        <h1>WHAT WE DO</h1>
+        <p>KUNBI KARES: Supporting Mothers, Protecting Children</p>
+
+        <div class="row">
+            <div class="whatwedo-col">
+                <h3>Firstly</h3>
+                <p>We are dedicated to improving the quality of life for children living with sickle cell disease by providing specialized medical assistance, ensuring equitable access to education, and championing systemic advocacy to create a more supportive and informed society.</p>
+            </div>
+
+            <div class="whatwedo-col">
+                <h3>Secondly</h3>
+                <p>We strive to transform community well-being by promoting comprehensive awareness and education on maternal and child health, alongside specialized sickle cell disease advocacy, to ensure families are taught to navigate healthy pregnancies, and manage genetic health challenges effectively.</p>
+            </div>
+
+            <div class="whatwedo-col">
+                <h3>Lastly</h3>
+                <p>We are committed to narrowing the health equity gap by deploying targeted outreach and sustainable resources to underserved and vulnerable populations, ensuring that socioeconomic status or geographic location never dictates a person's access to high-quality healthcare and life-saving information.</p>
+            </div>
+        </div>
+
+    </section>
+
+    <!--Our Programs-->
+
+    <section>
+        <div class="programs">
+            <h1>Our Programs</h1>
+            <p>These are the programs and services we provide.</p>
+        </div>
+
+        <div class="row">
+            <div class="programs-col">
+                <img src="image/Sickle cell.png">
+                <h3>Sickle Cell Support Program</h3>
+                <p>Our Sickle Cell Support Program is dedicated to improving the quality of life for children and families affected by sickle cell disease. We provide a holistic approach to care that includes access to routine screenings, essential medications, and crisis management education.</p>
+            </div>
+
+            <div class="programs-col">
+                <img src="image/Health Care Needs.jpeg">
+                <h3>Child Health and Welfare Program</h3>
+                <p>At Kunbi Kares, we believe a child's health is the bedrock of their future. Our welfare initiatives go beyond basic medical care; we advocate for the rights of every child to receive quality healthcare and a nurturing upbringing.</p>
+            </div>
+
+            <div class="programs-col">
+                <img src="image/Pregnancy.png">
+                <h3>Maternal Health Support Program</h3>
+                <p>We believe no woman should face the challenges of motherhood alone. Through our maternal health initiatives, we bridge the gap in healthcare access by providing pregnant women with life-saving education, medical advocacy.</p>
+            </div>
+
+            <div class="programs-col">
+                <img src="image/Empowering.png">
+                <h3>Community Outreach and Advocacy</h3>
+                <p>Our mission extends beyond aid; we reach deep into local communities to empower individuals. By delivering vital health awareness and advocacy for sickle cell and maternal welfare.</p>
+            </div>
+        </div>
+
+    </section>
+
+    <!--Footer-->
+    <section class="footer">
+        <div class="icons">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="https://www.instagram.com/kunbi_kares_foundation?igsh=MWwxa2ZuMXowdWp3dw%3D%3D&utm_source=qr" target="_blank">
+            <i class="fa fa-instagram"></i>
+            </a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+        </div>
+        <p>Feel free to Donate <i class="fa fa-heart-o"></i></p>
+    </section>
+
+    <!--JavaScript for toggle menu-->
+    <script>
+
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+
+    </script>
+    
+</body>
+</html>
