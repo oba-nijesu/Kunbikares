@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KUNBI KARES – Our Services</title>
+  <link rel="stylesheet" href="vendor.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+  <div class="sub-header">
+        <nav class="scrolled">
+      <a href="index.html" class="nav-logo">
+        <img src="image/logo.png" alt="Kunbi Kares Logo">
+      </a>
+      <div class="nav-links" id="navLinks">
+        <i class="fa fa-times" onclick="hideMenu()"></i>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="whatwedo.html">Our Services</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="donate.html">Donate</a></li>
+        </ul>
+      </div>
+      <a href="contact.html" class="nav-cta">
+        Contact US <i class="fa fa-arrow-circle-right"></i>
+      </a>
+      <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <h1 class="animate__animated animate__fadeInDown animate__delay-1s">Our Programs &amp; Services</h1>
+  </div>
+
+  <div class="whatwedo">
+    <h1 data-aos="fade-up">WHAT WE DO</h1>
+    <p data-aos="fade-up" data-aos-delay="100">KUNBI KARES: Supporting Mothers, Protecting Children</p>
+    <div class="row">
+      <div class="whatwedo-col" data-aos="fade-up" data-aos-delay="100">
+        <h3>Firstly</h3>
+        <p>We are dedicated to improving the quality of life for children living with sickle cell disease by providing specialized medical assistance, ensuring equitable access to education, and championing systemic advocacy to create a more supportive and informed society.</p>
+      </div>
+      <div class="whatwedo-col" data-aos="fade-up" data-aos-delay="200">
+        <h3>Secondly</h3>
+        <p>We strive to transform community well-being by promoting comprehensive awareness and education on maternal and child health, alongside specialized sickle cell disease advocacy, to ensure families are taught to navigate healthy pregnancies and manage genetic health challenges effectively.</p>
+      </div>
+      <div class="whatwedo-col" data-aos="fade-up" data-aos-delay="300">
+        <h3>Lastly</h3>
+        <p>We are committed to narrowing the health equity gap by deploying targeted outreach and sustainable resources to underserved and vulnerable populations, ensuring that socioeconomic status or geographic location never dictates a person's access to high-quality healthcare.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="programs">
+    <h1 data-aos="fade-up">Our Programs</h1>
+    <p data-aos="fade-up" data-aos-delay="100">These are the programs and services we provide.</p>
+    <div class="row">
+      <div class="programs-col" data-aos="fade-up" data-aos-delay="100">
+        <img src="image/Sickle cell.png" alt="Sickle Cell Support">
+        <h3>Sickle Cell Support Program</h3>
+        <p>Our Sickle Cell Support Program is dedicated to improving the quality of life for children and families affected by sickle cell disease. We provide holistic care including routine screenings, essential medications, and crisis management education.</p>
+      </div>
+      <div class="programs-col" data-aos="fade-up" data-aos-delay="200">
+        <img src="image/Health Care Needs.jpeg" alt="Child Health and Welfare">
+        <h3>Child Health and Welfare Program</h3>
+        <p>At Kunbi Kares, we believe a child's health is the bedrock of their future. Our welfare initiatives go beyond basic medical care; we advocate for the rights of every child to receive quality healthcare and a nurturing upbringing.</p>
+      </div>
+      <div class="programs-col" data-aos="fade-up" data-aos-delay="300">
+        <img src="image/Pregnancy.png" alt="Maternal Health">
+        <h3>Maternal Health Support Program</h3>
+        <p>We believe no woman should face the challenges of motherhood alone. Through our maternal health initiatives, we bridge the gap in healthcare access by providing pregnant women with life-saving education and medical advocacy.</p>
+      </div>
+      <div class="programs-col" data-aos="fade-up" data-aos-delay="400">
+        <img src="image/Empowering.png" alt="Community Outreach">
+        <h3>Community Outreach and Advocacy</h3>
+        <p>Our mission extends beyond aid; we reach deep into local communities to empower individuals by delivering vital health awareness and advocacy for sickle cell and maternal welfare.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="icons" data-aos="fade-up">
+      <a href="#" aria-label="Facebook"><i class="fa fa-facebook"></i></a>
+      <a href="#" aria-label="Twitter"><i class="fa fa-twitter"></i></a>
+      <a href="https://www.instagram.com/kunbi_kares_foundation?igsh=MWwxa2ZuMXowdWp3dw%3D%3D&utm_source=qr" target="_blank" rel="noopener" aria-label="Instagram">
+        <i class="fa fa-instagram"></i>
+      </a>
+      <a href="#" aria-label="LinkedIn"><i class="fa fa-linkedin"></i></a>
+    </div>
+    <p>Feel free to Donate <i class="fa fa-heart-o"></i></p>
+  </div>
+
+  <script src="vendor.js"></script>
+  <script src="main.js"></script>
+  <script>
+
+    // Sticky nav: transparent on hero, black on scroll OR hover
+    const nav = document.querySelector('nav');
+
+    function updateNav() {
+      if (window.scrollY > 50) {
+        nav.classList.add('scrolled');
+      } else {
+        nav.classList.remove('scrolled');
+      }
+    }
+
+    window.addEventListener('scroll', updateNav);
+
+    nav.addEventListener('mouseenter', function() {
+      nav.classList.add('scrolled');
+    });
+
+    nav.addEventListener('mouseleave', function() {
+      // Only remove if not scrolled past threshold
+      if (window.scrollY <= 50) {
+        nav.classList.remove('scrolled');
+      }
+    });
+    function showMenu() {
+      document.getElementById('navLinks').style.right = '0';
+    }
+    function hideMenu() {
+      document.getElementById('navLinks').style.right = '-200px';
+    }
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KUNBI KARES – Donate</title>
+  <link rel="stylesheet" href="vendor.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+  <div class="sub-header">
+        <nav class="scrolled">
+      <a href="index.html" class="nav-logo">
+        <img src="image/logo.png" alt="Kunbi Kares Logo">
+      </a>
+      <div class="nav-links" id="navLinks">
+        <i class="fa fa-times" onclick="hideMenu()"></i>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="whatwedo.html">Our Services</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="donate.html">Donate</a></li>
+        </ul>
+      </div>
+      <a href="contact.html" class="nav-cta">
+        Contact US <i class="fa fa-arrow-circle-right"></i>
+      </a>
+      <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <h1 class="animate__animated animate__fadeInDown animate__delay-1s">Donate</h1>
+  </div>
+
+  <div class="donate">
+    <div class="row">
+      <div class="donate-col" data-aos="fade-right">
+        <h1>TO DONATE</h1>
+        <p>Thank you for your heart to give. We are currently finalizing our secure online donation portal to ensure your contributions are handled with the utmost care. In the meantime, your support remains vital to our mission of maternal and child health. Please click the Contact Us button below to reach out privately and learn how you can partner with us today.</p>
+        <a href="contact.html" class="hero-btn red-btn">CONTACT US</a>
+      </div>
+      <div class="about-col" data-aos="fade-left" data-aos-delay="150">
+        <img src="image/Donate.png" alt="Donate">
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="icons" data-aos="fade-up">
+      <a href="#" aria-label="Facebook"><i class="fa fa-facebook"></i></a>
+      <a href="#" aria-label="Twitter"><i class="fa fa-twitter"></i></a>
+      <a href="https://www.instagram.com/kunbi_kares_foundation?igsh=MWwxa2ZuMXowdWp3dw%3D%3D&utm_source=qr" target="_blank" rel="noopener" aria-label="Instagram">
+        <i class="fa fa-instagram"></i>
+      </a>
+      <a href="#" aria-label="LinkedIn"><i class="fa fa-linkedin"></i></a>
+    </div>
+    <p>Feel free to Donate <i class="fa fa-heart-o"></i></p>
+  </div>
+
+  <script src="vendor.js"></script>
+  <script src="main.js"></script>
+  <script>
+
+    // Sticky nav: transparent on hero, black on scroll OR hover
+    const nav = document.querySelector('nav');
+
+    function updateNav() {
+      if (window.scrollY > 50) {
+        nav.classList.add('scrolled');
+      } else {
+        nav.classList.remove('scrolled');
+      }
+    }
+
+    window.addEventListener('scroll', updateNav);
+
+    nav.addEventListener('mouseenter', function() {
+      nav.classList.add('scrolled');
+    });
+
+    nav.addEventListener('mouseleave', function() {
+      // Only remove if not scrolled past threshold
+      if (window.scrollY <= 50) {
+        nav.classList.remove('scrolled');
+      }
+    });
+    function showMenu() {
+      document.getElementById('navLinks').style.right = '0';
+    }
+    function hideMenu() {
+      document.getElementById('navLinks').style.right = '-200px';
+    }
+  </script>
+
+</body>
+</html>
