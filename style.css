@@ -7,7 +7,7 @@
 .header{
     min-height: 100vh;
     width: 100%;
-    background-image: linear-gradient(rgba(132, 132, 132, 0.7), rgba(48, 48, 48, 0.7)), url(image/Banner.png);
+    background-image: linear-gradient(rgba(50, 42, 42, 0.826), rgba(36, 37, 36, 0.7)), url(image/Banner.png);
     background-position: center;
     background-size: cover;
     position: relative;
@@ -33,7 +33,7 @@ nav{
 }
 
 nav.scrolled{
-    background: #292929;
+    background: #223027;
     box-shadow: 0 2px 16px rgba(0,0,0,0.4);
 }
 
